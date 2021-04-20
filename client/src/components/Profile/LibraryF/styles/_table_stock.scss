@@ -1,0 +1,94 @@
+.stock-table-container {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  max-width: 1280px;
+  .stock-table-wrap {
+    max-width: 1280px;
+    .table-header {
+      font-size: 1.4rem;
+      font-weight: 600;
+      display: flex;
+      border: 1px solid #000;
+      padding: 5px;
+    }
+
+    .column {
+      display: flex;
+      justify-content: center;
+    }
+
+    .coverpage-column {
+      min-width: 75px;
+      width: 5%;
+    }
+    .title-column,
+    .author-column {
+      min-width: 100px;
+      width: 12.5%;
+    }
+
+    .isbn-column {
+      min-width: 100px;
+      width: 10%;
+    }
+
+    .book-stock-column,
+    .book-price-column {
+      min-width: 225px;
+      width: 25%;
+    }
+
+    .book-options-column {
+      min-width: 70px;
+      //width: 10%;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border: 1px solid #000;
+      border-top: none;
+      padding: 5px 10px;
+
+      img {
+        height: 75px;
+        width: 50px;
+      }
+
+      .book-options {
+        display: flex;
+        button {
+          height: 32px;
+          width: 32px;
+          margin: 0 5px 0 0;
+          border: 1px solid #000;
+
+          &.edit-option {
+            background-color: orange;
+          }
+
+          &.delete-option {
+            background-color: red;
+          }
+
+          img {
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+
+      .book-stock,
+      .book-price {
+        display: flex;
+
+        .cell {
+          padding: 0 5px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

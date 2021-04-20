@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "types": ["node"],
+        "module": "commonjs",
+        "jsx": "react",
+        "watch": true,
+        "target": "es5",
+        "lib": ["es6", "dom"],
+        "esModuleInterop": true,
+        "baseUrl": "src/",
+        "paths": {
+            "@logos/*": ["static/logos/*"],
+            "@images/*": ["static/images/*"],
+            "@wallpapers/*": ["static/wallpapers/*"],
+            "@js/*": ["static/js/*"],
+        }
+    }
+}

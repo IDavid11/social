@@ -1,0 +1,27 @@
+.ranking-wrap {
+  .ranking-header {
+    display: flex;
+  }
+  .ranking {
+    .rank {
+      display: flex;
+      font-size: 16px;
+      padding-top: 10px;
+      .rank-img {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #000;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+      .rank-number,
+      .rank-img,
+      .rank-name,
+      .rank-books {
+        padding: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.personal-info-container {
+  max-width: 1080px;
+  margin: auto;
+  .personal-info-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}

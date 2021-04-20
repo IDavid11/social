@@ -1,0 +1,46 @@
+.container-fw.potential {
+  background-color: #000;
+
+  .container-basic {
+    .potential-container {
+      color: #fff;
+      padding: 50px 0;
+
+      .title {
+        padding-left: 10px;
+      }
+
+      .potential-flex {
+        justify-content: space-between;
+
+        .potential-card {
+          min-width: 500px;
+          margin-top: 20px;
+          padding: 0 10px;
+          color: #fff;
+
+          .card-img {
+            width: 100%;
+
+            img {
+              min-width: 100%;
+              height: 500px;
+              border-radius: 8px;
+              object-position: 50% 0;
+            }
+          }
+
+          .card-details {
+            display: flex;
+            flex-direction: column;
+
+            .desc {
+              font-size: 1.6rem;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

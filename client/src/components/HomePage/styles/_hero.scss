@@ -1,0 +1,49 @@
+.container-fw.hero {
+  position: relative;
+  z-index: 0 !important;
+
+  .background-img {
+    height: 80vh;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 0;
+    }
+  }
+
+  .container-basic {
+    height: 80vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+
+    .container-hero {
+      .hero-wrap {
+        padding: 150px 50px;
+        .hero-title {
+          font-size: 5.2rem;
+          line-height: 4.5rem;
+          letter-spacing: 0.3px;
+          color: #fff;
+          margin-bottom: 25px;
+        }
+
+        .hero-button {
+          border: 1px solid transparent;
+          border-radius: 8px;
+          padding: 7px 20px;
+          background-color: #fff;
+          color: #000;
+
+          span {
+            font-size: 1.4rem;
+            letter-spacing: 0.2px;
+          }
+        }
+      }
+    }
+  }
+}

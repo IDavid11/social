@@ -1,0 +1,138 @@
+.container-profile {
+  .profile-container {
+    max-width: 1080px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin: auto;
+    min-height: 70vh;
+
+    .profile-header {
+      min-height: 10vh;
+      display: flex;
+      align-items: flex-end;
+
+      .header-img {
+        img {
+          width: 150px;
+          height: 170px;
+          border: 1px solid #c1c3c1;
+          border-radius: 100%;
+        }
+      }
+
+      .header-details {
+        margin-left: 1rem;
+
+        .details-top {
+          display: flex;
+
+          .details-name {
+            margin-bottom: 1rem;
+
+            .user-name {
+              font-size: 2.3rem;
+              font-weight: 600;
+              text-transform: capitalize;
+            }
+          }
+
+          .details-checks {
+            margin-left: 2rem;
+            margin-top: 0.3rem;
+            display: flex;
+          }
+        }
+
+        .details-bottom {
+          display: flex;
+
+          .details-stats {
+            display: flex;
+            align-items: center;
+
+            .stats {
+              font-weight: 600;
+              text-align: center;
+            }
+
+            .stats-divider {
+              height: 3rem;
+              border: 1px solid gray;
+            }
+
+            .stats,
+            .stats-divider {
+              margin: 1.5rem 2rem 1rem 0;
+            }
+          }
+
+          .details-update {
+            align-self: flex-end;
+            margin: 0 0 1rem 2.5rem;
+            display: flex;
+
+            p {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .profile-body {
+      margin-top: 5rem;
+      min-height: 40vh;
+
+      .body-menu {
+        display: flex;
+        flex-wrap: wrap;
+
+        .menu-container {
+          max-width: 300px;
+          min-width: 343.98px;
+          padding: 10px 10px;
+
+          .menu {
+            height: 100%;
+            padding: 20px 20px;
+            padding-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px 3px #e9ece9;
+
+            .menu-img {
+              .icon {
+                width: 32px;
+                height: 32px;
+              }
+            }
+
+            .menu-text {
+              color: #3d3e3d;
+
+              .menu-header {
+                .menu-title {
+                  font-size: 1.9rem;
+                  letter-spacing: 0.3px;
+                  font-weight: 700;
+                  padding: 10px 0;
+                }
+
+                .menu-span {
+                  padding: 14px 0;
+                  font-size: 1.4rem;
+                  margin-left: 10px;
+                  color: red;
+                }
+              }
+
+              .menu-desc {
+                font-size: 1.7rem;
+                letter-spacing: 0.3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

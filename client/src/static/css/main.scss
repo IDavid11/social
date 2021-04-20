@@ -1,0 +1,81 @@
+.title {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+
+.desc-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.c-button {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input {
+  border: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+// GLOBAL COMPONENTS
+@import "../../components/Global/Navbar/navbar";
+@import "../../components/Global/Footer/footer";
+
+// HOME PAGE
+@import "../../components/HomePage/styles/hero";
+@import "../../components/HomePage/styles/potential";
+@import "../../components/HomePage/styles/new_libraries";
+@import "../../components/HomePage/styles/local_destacables";
+
+// AUTH
+@import "../../components/Auth/styles/auth";
+
+// BOOK
+@import "../../components/Books/styles/book_list";
+@import "../../components/Books/styles/book";
+@import "../../components/Books/styles/about_author";
+@import "../../components/Books/styles/data_sheet";
+@import "../../components/Books/styles/opinions";
+
+// LIBRARY
+@import "../../components/Libraries/styles/libraries_list";
+@import "../../components/Libraries/styles/close_libraries";
+@import "../../components/Libraries/styles/library_item";
+@import "../../components/Libraries/styles/checks";
+
+// PROFILE
+@import "../../components/Profile/user_profile";
+@import "../../components/Profile/LibraryF/styles/stock";
+@import "../../components/Profile/LibraryF/styles/book_form";
+@import "../../components/Profile/LibraryF/styles/table_stock";
+
+@import "../../components/Profile/User/Stats/user_stats";
+@import "../../components/Profile/User/Stats/Components/goals";
+@import "../../components/Profile/User/Stats/Components/fav_category";
+@import "../../components/Profile/User/Stats/Components/fav_book";
+@import "../../components/Profile/User/Stats/Components/ranking";
+@import "../../components/Profile/User/Stats/Components/activity";
+
+@import "../../components/Profile/User/PersonalInfo/personal_info";
+@import "../../components/Profile/User/PersonalInfo/Components/personal_info_nav";
+@import "../../components/Profile/User/PersonalInfo/Components/personal_info_form";
+
+// CSS GLOBAL
+@import "./Global/global";

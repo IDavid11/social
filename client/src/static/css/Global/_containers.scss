@@ -1,0 +1,59 @@
+.container-fw {
+  width: 100%;
+}
+
+.container {
+  max-width: 1620px;
+  margin: auto;
+  padding: 0 48px;
+}
+
+.container-mt100 {
+  margin-top: 100px;
+}
+
+.container-mt50 {
+  margin-top: 50px;
+}
+
+.container-mb50 {
+  margin-bottom: 50px;
+}
+
+.container-mt {
+  margin-top: 0; /*CONTENEDOR PARA CANDO SEXA NECESARIO MODIFICAR O MT*/
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-flex-ac {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container-flex-jc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-divider {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.container-is-divided {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
