@@ -1,0 +1,16 @@
+.user-menu {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .user-component {
+    width: 65px;
+    padding: 3px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,15 @@
+export const apiUrls = {
+  urlProfile: "/user/profile",
+  urlLibraryProfile: "/libraries/profile",
+  urlUpdateUser: "/user/profile",
+  urlUpdateUserImage: "/user/profile/image",
+  urlAddUserShippingAddress: "/user/profile/shipping-address",
+  urlUpdateUserShippingAddress: "/user/profile/shipping-address",
+  urlGetUserShippingAddress: "/user/profile/shipping-address",
+  urlBooks: "/books",
+  urlFormBook: "/books/add",
+  urlLibraries: "/libraries",
+  urlRegister: "/auth/register",
+  urlRegisterLibrary: "/auth/register/library",
+  urlLogin: "/auth/login",
+};

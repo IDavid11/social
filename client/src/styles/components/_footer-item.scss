@@ -1,0 +1,16 @@
+.footer-item {
+  border-top: 1px solid #dddddd !important;
+  padding: 15px 0;
+
+  .item-title {
+    font-weight: 600;
+  }
+
+  .item-list {
+    font-size: 14px;
+
+    li {
+      padding-top: 12px;
+    }
+  }
+}

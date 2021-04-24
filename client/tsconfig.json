@@ -1,18 +1,30 @@
 {
-    "compilerOptions": {
-        "types": ["node"],
-        "module": "commonjs",
-        "jsx": "react",
-        "watch": true,
-        "target": "es5",
-        "lib": ["es6", "dom"],
-        "esModuleInterop": true,
-        "baseUrl": "src/",
-        "paths": {
-            "@logos/*": ["static/logos/*"],
-            "@images/*": ["static/images/*"],
-            "@wallpapers/*": ["static/wallpapers/*"],
-            "@js/*": ["static/js/*"],
-        }
-    }
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es6",
+    "baseUrl": "src/",
+    "paths": {
+      "@icons/*": ["static/icons/*"],
+      "@images/*": ["static/images/*"],
+      "@wallpapers/*": ["static/wallpapers/*"],
+      "@js/*": ["static/js/*"],
+    },
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
 }

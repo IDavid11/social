@@ -1,0 +1,37 @@
+.close-libraries-container {
+  margin-top: 30px;
+
+  .close-libraries-wrap {
+    .close-libraries-title {
+      font-size: 22px;
+      font-weight: 600;
+      padding: 0 24px;
+      white-space: pre-line;
+    }
+
+    .close-libraries-items-container {
+      display: grid;
+      gap: 12px;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(2);
+      grid-auto-flow: column;
+      scroll-snap-type: x mandatory;
+      padding-top: 15px !important;
+      padding: 0 24px;
+      overflow-x: auto;
+      scroll-padding: 20px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari and Opera */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    }
+  }
+}

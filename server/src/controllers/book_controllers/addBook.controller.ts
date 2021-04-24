@@ -165,11 +165,12 @@ export const addBook = async (req: Request, res: Response) => {
       tapaDuraPrice,
       tapaDuraNewPrice,
     } = req.body;
-    console.log(req.userId);
+
+    console.log(req.file);
 
     const user = await User.findById(req.userId);
-    const userId = user?._id;
-    const library = await Library.findOne({ user: userId });
+    if (!user) return res.status(403).json("Forbiden access");
+    const library = await Library.findOne({ baseUserId: req.userId });
     if (!library) return res.status(400).json("Login is required");
 
     const stock = {
@@ -210,6 +211,7 @@ export const addBook = async (req: Request, res: Response) => {
     if (response !== undefined) return res.status(200).json(response); // SE O LIBRO EXISTE INTERRUMPE A FUNCION E RETORNA O LIBRO
 
     await checkImage({ req, newBook }).then((res) => (newBook.coverPage = res));
+    console.log(newBook.coverPage);
     const newBookId = newBook._id;
     await addNewAuthor({ author, authorId, newBookId });
 

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+// COMPONENTS
+@import "components/navbar";
+@import "components/mobile-nav";
+@import "components/mobile-search";
+@import "components/search-button";
+@import "components/user-menu";
+@import "components/book-item";
+@import "components/close-library-item";
+@import "components/come-item";
+@import "components/category-dive-item";
+@import "components/footer";
+@import "components/footer-item";
+
+// MODULES
+@import "modules/home-page/hero";
+@import "modules/home-page/come-to-local";
+@import "modules/home-page/boost-library";
+@import "modules/home-page/categories-dive";
+@import "modules/layout";
+@import "modules/close-libraries";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}

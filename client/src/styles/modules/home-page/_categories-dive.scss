@@ -1,0 +1,43 @@
+.categories-dive-container {
+  margin-top: 30px;
+
+  .categories-dive-wrap {
+    .categories-dive-header {
+      padding: 0 24px;
+      .header-title {
+        font-size: 20px;
+        font-weight: 600;
+        white-space: pre-line;
+      }
+      .header-desc {
+        font-size: 16px;
+        padding-top: 5px;
+      }
+    }
+
+    .categories-dive-items-container {
+      display: grid;
+      gap: 12px;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(2);
+      grid-auto-flow: column;
+      scroll-snap-type: x mandatory;
+      padding-top: 15px !important;
+      padding: 0 24px;
+      overflow-x: auto;
+      scroll-padding: 20px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari and Opera */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    }
+  }
+}

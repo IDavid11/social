@@ -1,0 +1,40 @@
+.come-container {
+  margin-top: 30px;
+  background-color: #000;
+  padding: 5px 0;
+
+  .come-wrap {
+    padding: 10px 0;
+    .come-title {
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+      padding: 0 24px;
+      white-space: pre-line;
+    }
+    .come-items-container {
+      padding-top: 15px !important;
+      padding: 0 24px;
+      display: grid;
+      grid-auto-flow: column;
+      overflow-x: auto;
+      overflow-y: scroll;
+      scroll-snap-type: x mandatory;
+      gap: 12px;
+      grid-auto-columns: calc(100% - 84px) !important;
+      scroll-padding: 0 50px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+      }
+
+      &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari and Opera */
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    }
+  }
+}

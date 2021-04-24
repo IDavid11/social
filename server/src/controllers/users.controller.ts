@@ -66,7 +66,6 @@ class UsersController {
 
   public async updateUserImage(req: Request, res: Response): Promise<Response> {
     const id = req.userId;
-
     const file = req.file;
     const upload = uploadImage(file).then((res) => res);
 
@@ -90,34 +89,6 @@ class UsersController {
 
     return res.json({
       message: "Shipping Address successfully added",
-      user,
-    });
-  }
-
-  public async updatesadUserShippingAddress(req: Request, res: Response): Promise<Response> {
-    const { name, addressType, address, provincia, ciudad, codigoPostal, pais } = req.body;
-    const query = { baseUserId: req.userId };
-    console.log(req.params.id);
-
-    const user = await User.findOneAndUpdate(
-      { baseUserId: req.userId, "shippingAddresses._id": req.params.id },
-      //{ $set: { "shippingAddresses.$.name": name } },
-      { new: true }
-      //{
-      //  $set: {
-      //    "shippingAddresses.$.name": name,
-      //    "shippingAddresses.$.addressType": addressType,
-      //    "shippingAddresses.$.address": address,
-      //    "shippingAddresses.$.provincia": provincia,
-      //    "shippingAddresses.$.ciudad": ciudad,
-      //    "shippingAddresses.$.codigoPostal": codigoPostal,
-      //    "shippingAddresses.$.pais": pais,
-      //  },
-      //},
-    );
-
-    return res.json({
-      message: "Shipping Address successfully updated",
       user,
     });
   }

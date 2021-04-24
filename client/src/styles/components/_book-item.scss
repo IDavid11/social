@@ -1,0 +1,17 @@
+.book-item-container {
+  padding: 20px;
+  .book-ancore {
+    .book-item {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 2px 5px 10px 1px #c4c3c3;
+      padding: 10px;
+
+      .book-img,
+      .book-img img {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  }
+}

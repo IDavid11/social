@@ -1,0 +1,82 @@
+.boost-library-container {
+  margin-top: 30px;
+  padding: 0 24px;
+
+  .boost-library-wrap {
+    padding-top: 20px;
+    background-color: #232222;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .boost-library-item {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      .item-header {
+        padding: 10px 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .item-header-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: #fff;
+
+          .item-title {
+            align-self: center;
+            font-size: 30px;
+            font-weight: 400;
+            color: #fff;
+            white-space: pre-line;
+          }
+
+          .item-desc {
+            align-self: center;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: normal;
+            white-space: pre-line;
+            padding-top: 10px;
+            font-weight: 300;
+            text-align: left;
+          }
+        }
+        .item-header-button {
+          margin-top: 20px;
+          .button {
+            border: 1px solid #fff;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 9px 16px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .item-img {
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
